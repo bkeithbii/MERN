@@ -7,19 +7,19 @@ import Form from "react-bootstrap/Form";
 import FormControl from "react-bootstrap/FormControl";
 import Button from "react-bootstrap/Button";
 
-const urlC = "http://localhost:8080/character";
+// const urlC = "http://localhost:8080/character";
 
-let findCharacters = e => {
-  e.preventDefault();
-  fetch(urlC)
-    .then(res => res.json())
-    .then(res => {
-      console.log(res);
-    })
-    .catch(err => {
-      console.error(err);
-    });
-};
+// let findCharacters = e => {
+//   e.preventDefault();
+//   fetch(urlC)
+//     .then(res => res.json())
+//     .then(res => {
+//       console.log(res);
+//     })
+//     .catch(err => {
+//       console.error(err);
+//     });
+// };
 
 class Header extends Component {
   render() {
@@ -30,9 +30,7 @@ class Header extends Component {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link href="#home" onClick={findCharacters}>
-                Characters
-              </Nav.Link>
+              <Nav.Link href="#home">Characters</Nav.Link>
               <Nav.Link href="#link">Powers</Nav.Link>
               <NavDropdown title="Customize" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Good</NavDropdown.Item>
