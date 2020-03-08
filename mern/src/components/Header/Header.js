@@ -25,7 +25,7 @@ class Header extends Component {
   render() {
     return (
       <div>
-        <Navbar bg="dark" variant="dark" expand="lg">
+        <Navbar variant="dark" expand="lg" className="bar">
           <Navbar.Brand href="#home">Heroes & Villains</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">

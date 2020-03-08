@@ -44,64 +44,8 @@ class Character extends Component {
               <Card.Text>{item.Gender}</Card.Text>
             </Card.Body>
           </Card>
-          <br />
-
-          <Card bg="secondary" text="white" style={{ width: "18rem" }}>
-            <Card.Header>{item.Publisher}</Card.Header>
-            <Card.Body>
-              <Card.Title>{item.Name}</Card.Title>
-              <Card.Text>{item.Alignment}</Card.Text>
-              <Card.Text>{item.Race}</Card.Text>
-              <Card.Text>{item.Gender}</Card.Text>
-            </Card.Body>
-          </Card>
-          <br />
-
-          <Card bg="success" text="white" style={{ width: "18rem" }}>
-            <Card.Header>{item.Publisher}</Card.Header>
-            <Card.Body>
-              <Card.Title>{item.Name}</Card.Title>
-              <Card.Text>{item.Alignment}</Card.Text>
-              <Card.Text>{item.Race}</Card.Text>
-              <Card.Text>{item.Gender}</Card.Text>
-            </Card.Body>
-          </Card>
-          <br />
-
-          <Card bg="danger" text="white" style={{ width: "18rem" }}>
-            <Card.Header>{item.Publisher}</Card.Header>
-            <Card.Body>
-              <Card.Title>{item.Name}</Card.Title>
-              <Card.Text>{item.Alignment}</Card.Text>
-              <Card.Text>{item.Race}</Card.Text>
-              <Card.Text>{item.Gender}</Card.Text>
-            </Card.Body>
-          </Card>
-          <br />
-
-          <Card bg="warning" text="white" style={{ width: "18rem" }}>
-            <Card.Header>{item.Publisher}</Card.Header>
-            <Card.Body>
-              <Card.Title>{item.Name}</Card.Title>
-              <Card.Text>{item.Alignment}</Card.Text>
-              <Card.Text>{item.Race}</Card.Text>
-              <Card.Text>{item.Gender}</Card.Text>
-            </Card.Body>
-          </Card>
-          <br />
-
-          <Card bg="info" text="white" style={{ width: "18rem" }}>
-            <Card.Header>{item.Publisher}</Card.Header>
-            <Card.Body>
-              <Card.Title>{item.Name}</Card.Title>
-              <Card.Text>{item.Alignment}</Card.Text>
-              <Card.Text>{item.Race}</Card.Text>
-              <Card.Text>{item.Gender}</Card.Text>
-            </Card.Body>
-          </Card>
           <br /> */}
-
-          <Card bg="dark" text="danger" style={{ width: "18rem" }}>
+          {/* <Card bg="secondary" text="primary" style={{ width: "18rem" }}>
             <Card.Header>{item.Publisher}</Card.Header>
             <Card.Body>
               <Card.Title>{item.Name}</Card.Title>
@@ -112,6 +56,66 @@ class Character extends Component {
 
             <Accordion>
               <Card>
+                <Accordion.Toggle as={Card.Header} eventKey="0">
+                  Click me!
+                </Accordion.Toggle>
+                <Accordion.Collapse eventKey="0">
+                  <Card.Body>Hello! I'm the body</Card.Body>
+                </Accordion.Collapse>
+              </Card>
+            </Accordion>
+          </Card>
+          <br /> */}
+          {/* <Card bg="success" text="white" style={{ width: "18rem" }}>
+            <Card.Header>{item.Publisher}</Card.Header>
+            <Card.Body>
+              <Card.Title>{item.Name}</Card.Title>
+              <Card.Text>{item.Alignment}</Card.Text>
+              <Card.Text>{item.Race}</Card.Text>
+              <Card.Text>{item.Gender}</Card.Text>
+            </Card.Body>
+          </Card>
+          <br /> */}
+          {/* <Card bg="danger" text="white" style={{ width: "18rem" }}>
+            <Card.Header>{item.Publisher}</Card.Header>
+            <Card.Body>
+              <Card.Title>{item.Name}</Card.Title>
+              <Card.Text>{item.Alignment}</Card.Text>
+              <Card.Text>{item.Race}</Card.Text>
+              <Card.Text>{item.Gender}</Card.Text>
+            </Card.Body>
+          </Card> */}
+          {/* <Card bg="warning" text="white" style={{ width: "18rem" }}>
+            <Card.Header>{item.Publisher}</Card.Header>
+            <Card.Body>
+              <Card.Title>{item.Name}</Card.Title>
+              <Card.Text>{item.Alignment}</Card.Text>
+              <Card.Text>{item.Race}</Card.Text>
+              <Card.Text>{item.Gender}</Card.Text>
+            </Card.Body>
+          </Card>
+          <br /> */}
+          {/* <Card bg="info" text="white" style={{ width: "18rem" }}>
+            <Card.Header>{item.Publisher}</Card.Header>
+            <Card.Body>
+              <Card.Title>{item.Name}</Card.Title>
+              <Card.Text>{item.Alignment}</Card.Text>
+              <Card.Text>{item.Race}</Card.Text>
+              <Card.Text>{item.Gender}</Card.Text>
+            </Card.Body>
+          </Card>
+          <br />  */}
+          <Card bg="dark" text="white" style={{ width: "18rem" }}>
+            <Card.Header>{item.Publisher}</Card.Header>
+            <Card.Body>
+              <Card.Title>{item.Name}</Card.Title>
+              <Card.Text>{item.Alignment}</Card.Text>
+              <Card.Text>{item.Race}</Card.Text>
+              <Card.Text>{item.Gender}</Card.Text>
+            </Card.Body>
+
+            <Accordion>
+              <Card className="accordion">
                 <Accordion.Toggle as={Card.Header} eventKey="0">
                   Click me!
                 </Accordion.Toggle>
