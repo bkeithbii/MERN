@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import "./App.css";
 import { Route, Link, Redirect } from "react-router-dom";
 import Header from "../Header/Header";
+import Character from "../Characters/Character";
 
 class App extends Component {
   render() {
@@ -11,7 +12,9 @@ class App extends Component {
         <nav>
           <Route path="/" exact component={Header} />
         </nav>
-        <main></main>
+        <main>
+          <Character />
+        </main>
       </div>
     );
   }
