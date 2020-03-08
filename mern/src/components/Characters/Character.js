@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./Character.css";
 import { Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
+import Accordion from "react-bootstrap/Accordion";
 
 const urlC = "http://localhost:8080/character";
 
@@ -34,7 +35,7 @@ class Character extends Component {
     let characters = this.state.data.map(item => {
       return (
         <div className="character" key={item.id}>
-          <Card bg="primary" text="white" style={{ width: "18rem" }}>
+          {/* <Card bg="primary" text="white" style={{ width: "18rem" }}>
             <Card.Header>{item.Publisher}</Card.Header>
             <Card.Body>
               <Card.Title>{item.Name}</Card.Title>
@@ -98,9 +99,9 @@ class Character extends Component {
               <Card.Text>{item.Gender}</Card.Text>
             </Card.Body>
           </Card>
-          <br />
+          <br /> */}
 
-          <Card bg="dark" text="white" style={{ width: "18rem" }}>
+          <Card bg="dark" text="danger" style={{ width: "18rem" }}>
             <Card.Header>{item.Publisher}</Card.Header>
             <Card.Body>
               <Card.Title>{item.Name}</Card.Title>
@@ -108,6 +109,17 @@ class Character extends Component {
               <Card.Text>{item.Race}</Card.Text>
               <Card.Text>{item.Gender}</Card.Text>
             </Card.Body>
+
+            <Accordion>
+              <Card>
+                <Accordion.Toggle as={Card.Header} eventKey="0">
+                  Click me!
+                </Accordion.Toggle>
+                <Accordion.Collapse eventKey="0">
+                  <Card.Body>Hello! I'm the body</Card.Body>
+                </Accordion.Collapse>
+              </Card>
+            </Accordion>
           </Card>
           <br />
         </div>
