@@ -11,7 +11,8 @@ class Character extends Component {
     super(props);
 
     this.state = {
-      data: []
+      data: [],
+      powers: []
     };
   }
 
@@ -24,6 +25,9 @@ class Character extends Component {
       .then(data => {
         // console.log(data);
         this.setState({ data: data });
+        this.setState({ powers: data.map(item => item.Powers) });
+
+        // console.log(`${Array.isArray(this.state.powers)}`);
       })
       .catch(err => {
         console.error(err);
@@ -32,6 +36,9 @@ class Character extends Component {
 
   render() {
     console.log(this.state.data);
+    // let powers = this.state.data.map(function(item) {
+    //   return item.Powers;
+    // });
     let characters = this.state.data.map(item => {
       return (
         <div className="character" key={item.id}>
@@ -105,22 +112,27 @@ class Character extends Component {
             </Card.Body>
           </Card>
           <br />  */}
-          <Card bg="dark" text="white" style={{ width: "18rem" }}>
+          <Card
+            bg="dark"
+            text="white"
+            style={{ width: "18rem" }}
+            className="text-center"
+          >
             <Card.Header>{item.Publisher}</Card.Header>
             <Card.Body>
               <Card.Title>{item.Name}</Card.Title>
-              <Card.Text>{item.Alignment}</Card.Text>
-              <Card.Text>{item.Race}</Card.Text>
-              <Card.Text>{item.Gender}</Card.Text>
+              <Card.Text>Status: {item.Alignment}</Card.Text>
+              <Card.Text>Race: {item.Race}</Card.Text>
+              <Card.Text>Gender: {item.Gender}</Card.Text>
             </Card.Body>
 
             <Accordion>
               <Card className="accordion">
                 <Accordion.Toggle as={Card.Header} eventKey="0">
-                  Click me!
+                  Powers
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="0">
-                  <Card.Body>Hello! I'm the body</Card.Body>
+                  <Card.Body></Card.Body>
                 </Accordion.Collapse>
               </Card>
             </Accordion>
