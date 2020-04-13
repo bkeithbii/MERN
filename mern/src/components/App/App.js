@@ -10,10 +10,10 @@ class App extends Component {
     return (
       <div>
         <nav>
-          <Route path="/" exact component={Header} />
+          <Header />
         </nav>
         <main>
-          <Character />
+          <Route path="/characters" component={Character} />
         </main>
       </div>
     );
