@@ -4,6 +4,7 @@ import "./App.css";
 import { Route, Link, Redirect } from "react-router-dom";
 import Header from "../Header/Header";
 import Character from "../Characters/Character";
+import Home from "../Home/Home";
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
           <Header />
         </nav>
         <main>
+          <Route path="/" component={Home} />
           <Route path="/characters" component={Character} />
         </main>
       </div>

@@ -26,14 +26,16 @@ class Header extends Component {
     return (
       <div>
         <Navbar variant="dark" expand="lg" className="bar">
-          <Navbar.Brand href="#home">Heroes & Villains</Navbar.Brand>
+          <Navbar.Brand href="/" to="/">
+            Heroes & Villains
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
               <Nav.Link href="/characters" to="/characters">
                 Characters
               </Nav.Link>
-              <Nav.Link href="#link">Powers</Nav.Link>
+              {/* <Nav.Link href="#link">Powers</Nav.Link>
               <NavDropdown title="Customize" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Good</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">Evil</NavDropdown.Item>
@@ -49,7 +51,7 @@ class Header extends Component {
                 <NavDropdown.Item href="#action/3.9">
                   DC Characters
                 </NavDropdown.Item>
-              </NavDropdown>
+              </NavDropdown> */}
             </Nav>
             <Form inline>
               <FormControl
