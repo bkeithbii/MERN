@@ -1,6 +1,9 @@
 .accordion {
   background-color: #dddedf5b !important;
 }
+.powers {
+  margin-left: -40px;
+}
 
 .characterContainer {
   display: flex;

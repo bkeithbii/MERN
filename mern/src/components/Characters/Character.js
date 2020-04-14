@@ -72,7 +72,7 @@ class Character extends Component {
                   View Powers
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="0">
-                  <Card.Body>
+                  <Card.Body className="powers">
                     {" "}
                     <Powers powers={character.Powers}></Powers>
                   </Card.Body>
