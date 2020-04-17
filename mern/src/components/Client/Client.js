@@ -1,6 +1,7 @@
-const CHARACTER_ENDPOINT = "http://localhost:8080/character";
+const CHARACTER_ENDPOINT =
+  "https://heroes-and-villains-bb.herokuapp.com/character";
 
-// https://heroes-and-villains-bb.herokuapp.com/character
+//
 
 // http://localhost:8080/character
 

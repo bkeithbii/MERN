@@ -11,4 +11,6 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin-top: 50px;
+  background-image: url();
+  background-size: contain;
 }
