@@ -4,6 +4,7 @@ import "./App.css";
 import { Route } from "react-router-dom";
 import Header from "../Header/Header";
 import Character from "../Characters/Character";
+import Heroes from "../Characters/Heroes";
 import Home from "../Home/Home";
 
 class App extends Component {
@@ -15,7 +16,8 @@ class App extends Component {
         </nav>
         <main>
           <Route exact path="/" component={Home} />
-          <Route path="/characters" component={Character} />
+          <Route path="/character" component={Character} />
+          <Route path="/heroes" component={Heroes} />
         </main>
       </div>
     );

@@ -32,26 +32,42 @@ class Header extends Component {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link href="/characters" to="/characters">
-                Characters
+              <Nav.Link href="/character" to="/character">
+                All
               </Nav.Link>
-              {/* <Nav.Link href="#link">Powers</Nav.Link>
+              {/* <Nav.Link href="/heroes" to="/heroes">
+                Good
+              </Nav.Link> */}
               <NavDropdown title="Customize" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Good</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">Evil</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Male</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.4">Female</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.5">Humans</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.6">Mutants</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.7">Aliens</NavDropdown.Item>
+                <NavDropdown.Item href="/heroes" to="/heroes">
+                  Good
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/villains" to="/villains">
+                  Evil
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/males" to="/males">
+                  Male
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/females" to="/females">
+                  Female
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/humans" to="/humans">
+                  Humans
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/mutants" to="/mutants">
+                  Mutants
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/aliens" to="/aliens">
+                  Aliens
+                </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.8">
+                <NavDropdown.Item href="/marvelcomics" to="/marvelcomics">
                   Marvel Characters
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.9">
+                <NavDropdown.Item href="/dccomics" to="/dccomics">
                   DC Characters
                 </NavDropdown.Item>
-              </NavDropdown> */}
+              </NavDropdown>
             </Nav>
             <Form inline>
               <FormControl

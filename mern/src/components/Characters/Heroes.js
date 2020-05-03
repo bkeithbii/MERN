@@ -4,11 +4,9 @@ import { Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import Accordion from "react-bootstrap/Accordion";
 import Powers from "./Powers";
-import characterClient from "../Clients/characterClient.js";
+import heroesClient from "../Clients/heroesClient";
 
-const urlC = "https://heroes-and-villains-bb.herokuapp.com/character";
-
-class Character extends Component {
+class Heroes extends Component {
   constructor(props) {
     super(props);
 
@@ -21,7 +19,7 @@ class Character extends Component {
 
   async componentDidMount() {
     try {
-      const client = new characterClient(); // Create new instance of client
+      const client = new heroesClient(); // Create new instance of client
       const data = await client.fetchCharacters(); // Fetch characters from API returns resolved json
       this.setState({ data }); // Update state with new data
       this.setState({ characters: data.map((item) => item) });
@@ -35,19 +33,7 @@ class Character extends Component {
     }
   }
 
-  // findPowers = () => {
-  //   this.state.powers.map(item => {
-  //     return <p>{item.Powers}</p>;
-  //   });
-  // };
-
   render() {
-    // console.log(this.state.data);
-    // let powers = this.state.data.map(function(item) {
-    //   return item.Powers;
-    // });
-    let powersInfo = this.findPowers;
-    const character = this.state.characters[0];
     let characters = this.state.characters.map((character) => {
       return (
         <div className="character" key={character.id}>
@@ -88,4 +74,4 @@ class Character extends Component {
   }
 }
 
-export default Character;
+export default Heroes;
