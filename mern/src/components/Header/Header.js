@@ -35,9 +35,6 @@ class Header extends Component {
               <Nav.Link href="/character" to="/character">
                 All
               </Nav.Link>
-              {/* <Nav.Link href="/heroes" to="/heroes">
-                Good
-              </Nav.Link> */}
               <NavDropdown title="Customize" id="basic-nav-dropdown">
                 <NavDropdown.Item href="/heroes" to="/heroes">
                   Good
