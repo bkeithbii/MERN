@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import Accordion from "react-bootstrap/Accordion";
 import Powers from "./Powers";
-import aliensClient from "../Clients/aliensClient";
+import unknownsClient from "../Clients/unknownsClient";
 
-class Aliens extends Component {
+class Unknowns extends Component {
   constructor(props) {
     super(props);
 
@@ -19,7 +19,7 @@ class Aliens extends Component {
 
   async componentDidMount() {
     try {
-      const client = new aliensClient(); // Create new instance of client
+      const client = new unknownsClient(); // Create new instance of client
       const data = await client.fetchCharacters(); // Fetch characters from API returns resolved json
       this.setState({ data }); // Update state with new data
       this.setState({ characters: data.map((item) => item) });
@@ -74,4 +74,4 @@ class Aliens extends Component {
   }
 }
 
-export default Aliens;
+export default Unknowns;

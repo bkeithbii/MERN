@@ -11,7 +11,7 @@ import Males from "../Characters/Males";
 import Females from "../Characters/Females";
 import Humans from "../Characters/Humans";
 import Mutants from "../Characters/Mutants";
-import Aliens from "../Characters/Aliens";
+import Unknowns from "../Characters/Unknowns";
 import Marvel from "../Characters/Marvel";
 import DC from "../Characters/DC";
 
@@ -31,7 +31,7 @@ class App extends Component {
           <Route path="/females" component={Females} />
           <Route path="/humans" component={Humans} />
           <Route path="/mutants" component={Mutants} />
-          <Route path="/aliens" component={Aliens} />
+          <Route path="/unknowns" component={Unknowns} />
           <Route path="/marvelcomics" component={Marvel} />
           <Route path="/dccomics" component={DC} />
         </main>
